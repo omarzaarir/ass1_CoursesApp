@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="BGWithOp90">#CC003C43</color>
+    <color name="BG">#FF003C43</color>
+    <color name="Orange">#FFDC6B19</color>
+    <color name="Yallow">#FFF7C566</color>
+    <color name="mynameBG">#FF135D66</color>
+    <color name="blue">#FF77B0AA</color>
+    <color name="red">#FFB07777</color>
+    <color name="green">#FF008D4A</color>
+    <color name="gray">#FFE7E8E8</color>
+</resources>

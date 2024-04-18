@@ -208,4 +208,13 @@ public class course extends AppCompatActivity {
         map.put("Harvard CS50 – Full Computer Science University Course","https://www.youtube.com/watch?v=8mAITcNt710&list=PLWKjhJtqVAblfum5WiQblKPwIbqYXkDoC");
         stringMapMap.put("math",map);
     }
+     private void clearMemoryMap(){
+        stringMapMap.clear();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        clearMemoryMap();
+    }
 }

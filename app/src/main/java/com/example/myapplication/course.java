@@ -33,18 +33,6 @@ public class course extends AppCompatActivity {
         String Teacher = getIntent().getStringExtra("Teacher");
         Course_teacher.setText(Teacher);
 
-        enterLinksOffrance();
-        enterLinksOfgeographic();
-        enterLinksOfspanich();
-        enterLinksOfmath();
-        enterLinksOfArabic();
-        enterLinksOfEnglish();
-        enterLinksOftechnology();
-        enterLinksOfMath2();
-        enterLinksOfanimation();
-        enterLinksOfcoding();
-
-
         ArrayList<String> coursesClasses=new ArrayList<>();
         for (String c:stringMapMap.get(Title).keySet()) {
             coursesClasses.add(c);
@@ -216,5 +204,19 @@ public class course extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         clearMemoryMap();
+    }
+     @Override
+    protected void onStart() {
+        super.onStart();
+        enterLinksOffrance();
+        enterLinksOfgeographic();
+        enterLinksOfspanich();
+        enterLinksOfmath();
+        enterLinksOfArabic();
+        enterLinksOfEnglish();
+        enterLinksOftechnology();
+        enterLinksOfMath2();
+        enterLinksOfanimation();
+        enterLinksOfcoding();
     }
 }

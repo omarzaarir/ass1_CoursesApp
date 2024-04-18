@@ -33,6 +33,8 @@ public class course extends AppCompatActivity {
         String Teacher = getIntent().getStringExtra("Teacher");
         Course_teacher.setText(Teacher);
 
+        preMaping();
+
         ArrayList<String> coursesClasses=new ArrayList<>();
         for (String c:stringMapMap.get(Title).keySet()) {
             coursesClasses.add(c);
@@ -196,7 +198,8 @@ public class course extends AppCompatActivity {
         map.put("Harvard CS50 – Full Computer Science University Course","https://www.youtube.com/watch?v=8mAITcNt710&list=PLWKjhJtqVAblfum5WiQblKPwIbqYXkDoC");
         stringMapMap.put("math",map);
     }
-     private void clearMemoryMap(){
+
+    private void clearMemoryMap(){
         stringMapMap.clear();
     }
 
@@ -205,9 +208,8 @@ public class course extends AppCompatActivity {
         super.onStop();
         clearMemoryMap();
     }
-     @Override
-    protected void onStart() {
-        super.onStart();
+
+    private void preMaping(){
         enterLinksOffrance();
         enterLinksOfgeographic();
         enterLinksOfspanich();
@@ -218,5 +220,10 @@ public class course extends AppCompatActivity {
         enterLinksOfMath2();
         enterLinksOfanimation();
         enterLinksOfcoding();
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        preMaping();
     }
 }
